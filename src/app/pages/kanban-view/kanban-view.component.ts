@@ -11,13 +11,13 @@ import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 export class KanbanViewComponent implements OnInit {
 
   constructor(
-    private _dataService: DataService) { 
+    public _dataService: DataService) {
 
   }
 
-  public get Board():Board{
-    return this._dataService.getData();
-  }
+  // public get Board():Board{
+  //   return ;
+  // }
 
   ngOnInit() {
   }
